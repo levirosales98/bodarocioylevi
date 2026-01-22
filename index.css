@@ -5,42 +5,6 @@ body {
   box-sizing: border-box;
 }
 
-
-/* HEADER Y NAVBAR */
-
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: transparent; /* Comienza transparente */
-  z-index: 1050;
-  padding: 0.5rem 1rem;
-  width: 100%;
-  transition: background-color 0.3s ease-in-out; /* Transición suave */
-}
-
-.navbar.scrolled .nav-link {
-  color: white;
-}
-
-.navbar-brand img {
-  max-height: 50px;
-  margin-left: 10px;
-}
-
-.navbar-nav .nav-link {
-  font-size: 1rem;
-  color: black;
-  margin-right: 1rem;
-  transition: color 0.3s;
-}
-
-.navbar.scrolled .nav-link {
-  color: white;
-}
-
-
 /* IMAGEN DE INICIO */
 
 .image-container {
@@ -82,115 +46,111 @@ header {
   transform: scale(1.1);
 }
 
-/* TARJETAS */
+/* ITINERARIO */
 
-.card-container {
-  perspective: 1000px; /* Profundidad para el efecto 3D */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
 }
 
-.card {
-  transition: opacity 0.6s ease, transform 0.6s ease; /* Suavizar el volteo y opacidad */
-  transform-style: preserve-3d; /* Habilitar el efecto 3D */
-  position: relative;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: box-shadow 0.3s ease-in-out;
+/* HEADER */
+.header-invitacion {
+    background-color: #a68b6d; /* Color café */
+    text-align: center;
+    padding: 60px 20px 100px 20px;
+    position: relative;
 }
 
-.card:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+.icon-main { width: 120px; }
+
+.confirm-text {
+    font-family: 'Special Elite', cursive;
+    margin-top: 15px;
+    color: #3e322a;
 }
 
-.card.hide { /* esta clase se setea en Javascript */
-  opacity: 0; /* Desaparecer la tarjeta */
-  visibility: hidden; /* Evitar que ocupe espacio */
+/* EFECTO PAPEL RASGADO */
+.borde-rasgado {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-image: url('images/borde_rasgado.png'); /* Tu PNG de borde */
+    background-size: 100% 100%;
+    z-index: 10;
 }
 
-.flip-card-btn{
-  background-color: #192e5a;
-  color: white;
+/* ITINERARIO */
+.itinerario-section {
+    padding: 80px 10px;
+    text-align: center;
 }
 
-@keyframes flipIn {
-  from {
-    transform: rotateY(90deg); /* Comienza volteada */
-    opacity: 0; /* Invisible al inicio */
-  }
-  to {
-    transform: rotateY(0deg); /* Aparece de frente */
-    opacity: 1; /* Completamente visible */
-  }
+.titulo-itinerario {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 4rem;
+    color: #5f89c5;
+    margin-bottom: 50px;
 }
 
-/* MODAL */
-
-.modal-flip { /* esta clase se setea en Javascript */
-  animation: flipIn 0.4s ease-in-out; /* Animación al abrir la modal */
-  transform-origin: center; /* Punto de referencia del volteo */
+/* LÍNEA DE TIEMPO */
+.timeline {
+    position: relative;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
-.modal-header {
-  background-color: #192e5a;
-  color: #ffffff;
+.linea-punteada {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    border-left: 2px dotted #5f89c5;
+    transform: translateX(-50%);
 }
 
-.btn-close {
-  filter: invert(1);
+.timeline-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    position: relative;
 }
 
+.side { width: 45%; }
+.image-side img { width: 70px; }
 
-/* CLIENTES SATISFECHOS */
+.text-right { text-align: right; padding-right: 20px; }
+.text-left { text-align: left; padding-left: 20px; }
 
-.clientes-satisfechos{
-  background-color: black;
-  margin-top: 100px;
+.hora {
+    font-family: 'Special Elite', cursive;
+    font-weight: bold;
+    display: block;
 }
 
-.clientes-satisfechos h2{
-  color: white;
-  padding-top: 100px;
-  margin: 0;
-  text-align: center;
+.evento-nom {
+    font-family: 'Special Elite', cursive;
+    margin: 0;
 }
 
-.testimonial-card {
-  text-align: center;
-  border: 1px solid #292929;
-  border-radius: 10px;
-  padding: 20px; /*VER SI ESTA*/
-  background-color: 393939;
-  position: relative; /* Necesario para posicionar la imagen */
-  margin: 0px 0px; /* Espacio entre las tarjetas verticalmente */
+/* PUNTOS */
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #5f89c5;
+    border-radius: 50%;
+    z-index: 5;
+    flex-shrink: 0;
 }
 
-.testimonial-card img {
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-  border-radius: 50%;
-  position: absolute;
-  top: -40px; /* Posiciona la imagen fuera de la tarjeta */
-  left: 50%;
-  transform: translateX(-50%);
-  border: 3px solid #292929; /* Borde blanco para destacar */
-}
-
-.testimonial-card blockquote {
-  font-style: italic;
-  color: white;
-  margin-top: 50px; /* Añade espacio para la imagen */
-}
-
-.testimonial-card h3 {
-  margin-top: 15px;
-  font-weight: bold;
-  color: white;
-}
-
-.row.g-4 {
-  margin-top: 100px; /* Espacio para la primera fila con imágenes */
-  padding-bottom: 150px;
-  padding-left: 50px;
-  padding-right: 50px;
+/* RESPONSIVE */
+@media (max-width: 480px) {
+    .titulo-itinerario { font-size: 3rem; }
+    .side { width: 42%; }
 }
 
 
