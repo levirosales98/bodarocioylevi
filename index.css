@@ -201,50 +201,53 @@ body {
 
 
 
-/* MARCAS */
+/* COUNTDOWN */
 
-.brands-section {
-  overflow: hidden; /* Ocultar logos fuera de los límites */
+/* Estilos para que se vea elegante */
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: #333;
 }
 
-.brands-section h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 28px;
-  text-align: center;
-  margin-top: 100px;
+.time-segment {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    min-width: 70px;
 }
 
-/* Contenedor de los logos */
-.brands-container-wrapper {
-  display: flex;
-  overflow: hidden;
-  position: relative;
+.number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #5f89c5;
 }
 
-.brands-container {
-  display: flex;
-  animation: scroll 20s linear infinite; /* Animación continua y más suave */
-  white-space: nowrap; /* Asegura que todos los logos estén en una línea */
+.label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #777;
 }
 
-/* Logos individuales */
-.brand-logo {
-  margin: 0 40px;
-  width: 120px; /* Tamaño estándar de los logos */
-  height: auto; /* Mantener proporción */
-  filter: grayscale(100%); /* Blanco y negro por defecto */
-  transition: filter 0.3s ease-in-out; /* Transición al pasar el mouse */
+/* Responsive para celulares */
+@media (max-width: 480px) {
+    .countdown-container { gap: 10px; }
+    .time-segment { padding: 10px; min-width: 55px; }
+    .number { font-size: 1.5rem; }
+    .label { font-size: 0.6rem; }
 }
 
-/* Animación de desplazamiento de los logos */
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%); /* Mueve todo el contenedor para un flujo infinito */
-  }
-}
+
+
+
+
+
 
 
 /* IMÁGENES */
