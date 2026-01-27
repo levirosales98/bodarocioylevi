@@ -1,3 +1,14 @@
+/* COLORES
+
+Blanco: F0F8FF
+Blanco hueso: F0E3CE
+Dorado suave: CBA161
+Celeste claro: B6C5D5
+Celeste oscuro: 849CAF
+
+*/
+
+
 body {
   background-color: #F0F8FF; /* Un celeste muy suave (AliceBlue) */
   margin: 0;
@@ -67,34 +78,15 @@ img.portada {
   padding: 0 100px;
 }
 
-.power {
-  color: #005f73;
-  font-weight: 700;
-  font-size: 1.5em;
-  position: relative;
-  display: inline-block;
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-.power:hover {
-  color: #0a9396;
-  transform: scale(1.1);
-}
-
-
 
 
 
 /* ITINERARIO */
 
-body {
-    margin: 0;
-    padding: 0;
-    background-color: white;
-}
-
 /* HEADER */
-.header-invitacion {
-    background-color: #a68b6d; /* Color café */
+
+.header-invitacion { /* ?? */
+    background-color: #a68b6d;
     text-align: center;
     padding: 60px 20px 100px 20px;
     position: relative;
@@ -146,7 +138,7 @@ body {
     top: 0;
     bottom: 0;
     width: 2px;
-    border-left: 2px dotted #5f89c5;
+    border-left: 2px dotted #B6C5D5;
     transform: translateX(-50%);
 }
 
@@ -182,7 +174,7 @@ body {
 .dot {
     width: 10px;
     height: 10px;
-    background-color: #5f89c5;
+    background-color: #849CAF;
     border-radius: 50%;
     z-index: 5;
     flex-shrink: 0;
@@ -228,13 +220,6 @@ body {
     color: #5f89c5;
 }
 
-.label {
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #777;
-}
-
 /* Responsive para celulares */
 @media (max-width: 480px) {
     .countdown-container { gap: 10px; }
@@ -242,6 +227,43 @@ body {
     .number { font-size: 1.5rem; }
     .label { font-size: 0.6rem; }
 }
+
+
+
+
+
+
+/* GOOGLE PHOTOS */
+
+.titulo-album-fotos {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 4rem;
+    color: #CBA161;
+    margin-bottom: 50px;
+}
+
+.btn-photos {
+    background-color: #ffffff;
+    color: #444;
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: 600;
+    display: inline-block;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.btn-photos:hover {
+    background-color: #f8f9fa;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+    border-color: #ccc;
+}
+
+
 
 
 
