@@ -47,6 +47,98 @@ img.portada {
 
 
 
+/* PORTADA */
+
+.logo-boda {
+  padding-top: 200px;
+  padding-bottom: 300px;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 40px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+}
+
+.circulos-oro {
+    position: absolute;
+    width: 325px;
+    height: 325px;
+    border: 2px solid #CBA161;
+    border-radius: 50%;
+}
+
+.circulos-oro::after {
+    content: '';
+    position: absolute;
+    top: 4px; left: 4px;
+    width: 310px; height: 310px;
+    border: 1px solid #CBA161;
+    border-radius: 50%;
+}
+
+.nombres-container {
+    text-align: center;
+    color: #849CAF;
+    z-index: 3;
+}
+
+.nombre-fuente {
+    font-family: 'Special Elite', cursive;
+    font-size: 3rem;
+    margin: 0;
+    font-weight: 400;
+}
+
+.ampersand {
+    font-size: 1.5rem;
+    display: block;
+    margin: -10px 0;
+}
+
+.rama-sup {
+  top: 50px;
+  left: -100px;
+  width: 100px;
+  transform-origin: bottom right;
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+  animation: viento-superior 3s ease-in-out infinite alternate;
+  animation-delay: 0.7s;
+}
+
+.rama-inf {
+  bottom: 150px;
+  right: 0px;
+  width: 110px;
+  transform-origin: top left;
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+  animation: viento-inferior 3s ease-in-out infinite alternate;
+  animation-delay: 0.7s;
+}
+
+/* Animación de viento */
+@keyframes viento-inferior {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(4deg); }
+}
+
+@keyframes viento-superior {
+    0% { transform: rotate(110deg); }
+    100% { transform: rotate(105deg); }
+}
+
+
+
+
+
+
+
 
 
 
