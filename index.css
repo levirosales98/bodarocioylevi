@@ -5,12 +5,13 @@ Blanco hueso: F0E3CE
 Dorado suave: CBA161
 Celeste claro: B6C5D5
 Celeste oscuro: 849CAF
+Celeste dark: 5f89c5
 
 */
 
 
 body {
-  background-color: #F0F8FF; /* Un celeste muy suave (AliceBlue) */
+  background-color: #F0F8FF; /* Fondo del sitio que no es parte de la invitación */
   margin: 0;
   padding: 0;
   display: flex;
@@ -18,7 +19,6 @@ body {
   font-family: 'Arial', sans-serif;
 }
 
-/* 2. El contenedor de tu invitación (Simulando Tablet/Celular) */
 .invitacion-container {
     background-color: #FFFFFF; /* Fondo de la invitación */
     width: 100%;
@@ -34,24 +34,12 @@ body {
     text-align: center;
 }
 
-img.portada {
-    width: 100%;
-    height: auto;
-}
 
-
-
-
-
-
-
-
-
-/* PORTADA */
+/* PORTADA DE BIENVENIDA */
 
 .logo-boda {
   padding-top: 200px;
-  padding-bottom: 300px;
+  padding-bottom: 175px;
   position: relative;
   width: 300px;
   height: 300px;
@@ -87,7 +75,7 @@ img.portada {
 
 .nombre-fuente {
     font-family: 'Special Elite', cursive;
-    font-size: 3rem;
+    font-size: 4rem;
     margin: 0;
     font-weight: 400;
 }
@@ -111,7 +99,7 @@ img.portada {
 }
 
 .rama-inf {
-  bottom: 150px;
+  bottom: 25px;
   right: 0px;
   width: 110px;
   transform-origin: top left;
@@ -134,48 +122,35 @@ img.portada {
 }
 
 
+/* NOS CASAMOS */
 
-
-
-
-
-
-
-
-/* IMAGEN DE INICIO */
-
-.image-container {
-  width: 100%;
-  overflow: hidden; /* Asegura que no haya desbordamiento */
-  margin-top: 92px;
-}
-
-.full-width-image {
-  width: 100%;
-  height: auto;
-  display: block; /* Elimina el espacio en blanco debajo de la imagen */
-}
-
-
-/* NEGOCIO */
-
-.negocio {
+.nos-casamos {
   text-align: center;
-  margin-top: 100px;
+  font-family: 'Special Elite', cursive;
+  color: #849CAF;
+  font-size: 2rem;
   margin-bottom: 50px;
 }
 
-.negocio p{
-  margin-top: 50px;
-  padding: 0 100px;
+
+/* IMAGEN PRINCIPAL */
+
+img.portada {
+    width: 100%;
+    height: auto;
 }
 
 
 
 
-/* ITINERARIO */
 
-/* HEADER */
+
+
+
+
+
+
+/* PENDIENTE */
 
 .header-invitacion { /* ?? */
     background-color: #a68b6d;
@@ -204,7 +179,13 @@ img.portada {
     z-index: 10;
 }
 
+
+
+
+
+
 /* ITINERARIO */
+
 .itinerario-section {
     padding: 80px 10px;
     text-align: center;
@@ -217,7 +198,6 @@ img.portada {
     margin-bottom: 50px;
 }
 
-/* LÍNEA DE TIEMPO */
 .timeline {
     position: relative;
     max-width: 500px;
@@ -262,7 +242,6 @@ img.portada {
     margin: 0;
 }
 
-/* PUNTOS */
 .dot {
     width: 10px;
     height: 10px;
@@ -272,17 +251,41 @@ img.portada {
     flex-shrink: 0;
 }
 
-/* RESPONSIVE */
 @media (max-width: 480px) {
     .titulo-itinerario { font-size: 3rem; }
     .side { width: 42%; }
 }
 
 
+/* GOOGLE PHOTOS */
 
+.titulo-album-fotos {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 4rem;
+    color: #CBA161; 
+    margin-bottom: 50px;
+}
 
+.btn-photos {
+    background-color: #ffffff;
+    color: #444;
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: 600;
+    display: inline-block;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
 
-
+.btn-photos:hover {
+    background-color: #f8f9fa;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+    border-color: #ccc;
+}
 
 
 /* COUNTDOWN */
@@ -319,44 +322,6 @@ img.portada {
     .number { font-size: 1.5rem; }
     .label { font-size: 0.6rem; }
 }
-
-
-
-
-
-
-/* GOOGLE PHOTOS */
-
-.titulo-album-fotos {
-    font-family: 'Pinyon Script', cursive;
-    font-size: 4rem;
-    color: #CBA161;
-    margin-bottom: 50px;
-}
-
-.btn-photos {
-    background-color: #ffffff;
-    color: #444;
-    padding: 12px 25px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-family: 'Segoe UI', Arial, sans-serif;
-    font-weight: 600;
-    display: inline-block;
-    border: 1px solid #ddd;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-}
-
-.btn-photos:hover {
-    background-color: #f8f9fa;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
-    border-color: #ccc;
-}
-
-
-
 
 
 
