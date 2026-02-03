@@ -9,9 +9,10 @@ Celeste dark: 5f89c5
 
 */
 
+/* GENERAL */
 
 body {
-  background-color: #F0F8FF; /* Fondo del sitio que no es parte de la invitación */
+  background-color: #FFFFFF; /* Fondo del sitio que no es parte de la invitación */
   margin: 0;
   padding: 0;
   display: flex;
@@ -122,7 +123,7 @@ body {
 }
 
 
-/* NOS CASAMOS */
+/* NOS CASAMOS Y FECHA */
 
 .nos-casamos {
   text-align: center;
@@ -141,59 +142,77 @@ img.portada {
 }
 
 
-
-
-
-
-
-
-
-
-
-/* PENDIENTE */
-
-.header-invitacion { /* ?? */
-    background-color: #a68b6d;
-    text-align: center;
-    padding: 60px 20px 100px 20px;
+/* CÓDIGO DE VESTIMENTA */
+.vestimenta-encabezado {
     position: relative;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-.icon-main { width: 120px; }
-
-.confirm-text {
-    font-family: 'Special Elite', cursive;
-    margin-top: 15px;
-    color: #3e322a;
+.vestimenta-texto-negrita {
+    font-family: 'Pinyon Script', serif;
+    font-size: 2.5rem;
+    letter-spacing: 5px;
+    color: #000;
+    z-index: 2;
 }
 
-/* EFECTO PAPEL RASGADO */
-.borde-rasgado {
+.vestimenta-texto-cursiva {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 3rem;
+    color: #CBA161;
     position: absolute;
-    bottom: -1px;
-    left: 0;
-    width: 100%;
-    height: 60px;
-    background-image: url('images/borde_rasgado.png'); /* Tu PNG de borde */
-    background-size: 100% 100%;
-    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    opacity: 0.6;
+    z-index: 1;
+    white-space: nowrap;
 }
 
+.vestimenta-subtitulo {
+    font-family: 'Pinyon Script', serif;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #CBA161;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
 
+.vestimenta-iconos {
+    display: flex;
+    justify-content: center;
+    gap: 0px; /* Espacio entre el traje y el vestido */
+}
 
+.icono-item {
+    flex: 0 1 150px; /* Controla el ancho máximo de cada icono */
+}
 
+.img-vestimenta-hombre {
+    width: 47%;
+    height: auto;
+}
+
+.img-vestimenta-mujer {
+    width: 70%;
+    height: auto;
+}
 
 
 /* ITINERARIO */
 
-.itinerario-section {
-    padding: 80px 10px;
-    text-align: center;
+.itinerario {
+    padding: 40px 10px;
 }
 
 .titulo-itinerario {
     font-family: 'Pinyon Script', cursive;
-    font-size: 4rem;
+    font-size: 3rem;
     color: #5f89c5;
     margin-bottom: 50px;
 }
@@ -252,16 +271,20 @@ img.portada {
 }
 
 @media (max-width: 480px) {
-    .titulo-itinerario { font-size: 3rem; }
     .side { width: 42%; }
 }
 
 
 /* GOOGLE PHOTOS */
 
+.fotos-google {
+  text-align: center;
+  padding: 40px 10px;
+}
+
 .titulo-album-fotos {
     font-family: 'Pinyon Script', cursive;
-    font-size: 4rem;
+    font-size: 3rem;
     color: #CBA161; 
     margin-bottom: 50px;
 }
@@ -530,4 +553,39 @@ img.portada {
   .contact-container{
     margin-top: 25px !important;
   }
+}
+
+
+
+
+
+
+
+/* PENDIENTE */
+
+.header-invitacion { /* ?? */
+    background-color: #a68b6d;
+    text-align: center;
+    padding: 60px 20px 100px 20px;
+    position: relative;
+}
+
+.icon-main { width: 120px; }
+
+.confirm-text {
+    font-family: 'Special Elite', cursive;
+    margin-top: 15px;
+    color: #3e322a;
+}
+
+/* EFECTO PAPEL RASGADO */
+.borde-rasgado {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-image: url('images/borde_rasgado.png'); /* Tu PNG de borde */
+    background-size: 100% 100%;
+    z-index: 10;
 }
