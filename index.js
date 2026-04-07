@@ -20,6 +20,6 @@ const updateCountdown = setInterval(function() {
     // Si la cuenta regresiva termina
     if (distance < 0) {
         clearInterval(updateCountdown);
-        document.getElementById("countdown").innerHTML = "¡Es hoy!";
+        document.getElementById("countdown").innerHTML = "¡Nos Casamos!";
     }
 }, 1000);
