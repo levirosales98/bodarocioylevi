@@ -133,6 +133,11 @@ body {
   margin-bottom: 50px;
 }
 
+.nos-casamos > h2 {
+  color: #CBA161;
+  font-size: 1.2rem;
+}
+
 
 /* IMAGEN PRINCIPAL */
 
@@ -143,44 +148,25 @@ img.portada {
 
 
 /* CÓDIGO DE VESTIMENTA */
-.vestimenta-encabezado {
-    position: relative;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-}
 
-.vestimenta-texto-negrita {
-    font-family: 'Pinyon Script', serif;
-    font-size: 2.5rem;
-    letter-spacing: 5px;
-    color: #000;
-    z-index: 2;
+.vestimenta {
+  margin-top: 100px;
 }
-
-.vestimenta-texto-cursiva {
-    font-family: 'Pinyon Script', cursive;
-    font-size: 3rem;
-    color: #CBA161;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -40%);
-    opacity: 0.6;
-    z-index: 1;
-    white-space: nowrap;
+.vestimenta-titulo {
+  font-family: 'Pinyon Script', cursive;
+  font-size: 3rem;
+  color: #CBA161;
+  top: 50%;
+  left: 50%;
+  white-space: nowrap;
 }
 
 .vestimenta-subtitulo {
-    font-family: 'Pinyon Script', serif;
-    font-size: 1.3rem;
-    letter-spacing: 2px;
-    border-bottom: 1px solid #CBA161;
-    display: inline-block;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
+  font-family: 'Pinyon Script', serif;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  display: inline-block;
+  margin-bottom: 25px;
 }
 
 .vestimenta-iconos {
@@ -194,12 +180,12 @@ img.portada {
 }
 
 .img-vestimenta-hombre {
-    width: 47%;
+    width: 37%;
     height: auto;
 }
 
 .img-vestimenta-mujer {
-    width: 70%;
+    width: 55%;
     height: auto;
 }
 
@@ -207,7 +193,7 @@ img.portada {
 /* ITINERARIO */
 
 .itinerario {
-    padding: 40px 10px;
+    margin-top: 100px;
 }
 
 .titulo-itinerario {
@@ -275,18 +261,22 @@ img.portada {
 }
 
 
-/* GOOGLE PHOTOS */
+/* ÁLBUM DE FOTOS */
 
 .fotos-google {
-  text-align: center;
-  padding: 40px 10px;
+  margin-top: 100px;
 }
 
 .titulo-album-fotos {
     font-family: 'Pinyon Script', cursive;
     font-size: 3rem;
     color: #CBA161; 
-    margin-bottom: 50px;
+}
+
+.texto-album-fotos {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-family: sans-serif;
 }
 
 .btn-photos {
@@ -315,12 +305,13 @@ img.portada {
 
 /* Estilos para que se vea elegante */
 .countdown-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    color: #333;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: #333;
 }
 
 .time-segment {
@@ -383,7 +374,7 @@ img.portada {
 }
 
 
-/* CONTACTO-INFO */
+/* CONFIRMACIÓN */
 
 .contact-container{
   margin-top: 100px;
