@@ -327,6 +327,7 @@ img.portada {
 
 
 /* COUNTDOWN */
+
 .fecha-contador {
     position: relative;
     width: 100%;
@@ -404,11 +405,6 @@ img.portada {
   margin-top: 10px;
   letter-spacing: 1px;
 }
-
-
-
-
-
 
 
 /* IMÁGENES */
