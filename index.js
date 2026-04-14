@@ -1,25 +1,26 @@
 // COUNTDOWN
-const targetDate = new Date("Jan 9, 2027 15:30:00").getTime();
 
-const updateCountdown = setInterval(function() {
-    const now = new Date().getTime();
-    const distance = targetDate - now;
+const fechaObjetivo = new Date('Jan 9, 2027 16:00:00').getTime();
+
+const countdown = setInterval(function() {
+    const ahora = new Date().getTime();
+    const distancia = fechaObjetivo - ahora;
 
     // Cálculos de tiempo
-    const d = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const s = Math.floor((distance % (1000 * 60)) / 1000);
+    const dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
+    const horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
+    const segundos = Math.floor((distancia % (1000 * 60)) / 1000);
 
-    // Mostrar resultados
-    document.getElementById("days").innerHTML = d;
-    document.getElementById("hours").innerHTML = h < 10 ? "0" + h : h;
-    document.getElementById("minutes").innerHTML = m < 10 ? "0" + m : m;
-    document.getElementById("seconds").innerHTML = s < 10 ? "0" + s : s;
+    // Inyectar en el HTML
+    document.getElementById("dias-c").innerText = dias;
+    document.getElementById("horas-c").innerText = horas < 10 ? "0" + horas : horas;
+    document.getElementById("minutos-c").innerText = minutos < 10 ? "0" + minutos : minutos;
+    document.getElementById("segundos-c").innerText = segundos < 10 ? "0" + segundos : segundos;
 
-    // Si la cuenta regresiva termina
-    if (distance < 0) {
-        clearInterval(updateCountdown);
-        document.getElementById("countdown").innerHTML = "¡Nos Casamos!";
+    // Si termina el conteo
+    if (distancia < 0) {
+        clearInterval(countdown);
+        document.querySelector(".reloj-canva").innerHTML = "<h3>¡Llegó el gran día!</h3>";
     }
 }, 1000);
