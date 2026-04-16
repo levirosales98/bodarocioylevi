@@ -1,3 +1,15 @@
+// FLECHAS DESPLAZAMIENTO
+
+window.addEventListener('scroll', function() {
+    const indicador = document.getElementById('indicador-scroll');
+    if (window.scrollY > 50) {
+        indicador.classList.add('scroll-hidden');
+    } else {
+        indicador.classList.remove('scroll-hidden');
+    }
+});
+
+
 // COUNTDOWN
 
 const fechaObjetivo = new Date('Jan 9, 2027 16:00:00').getTime();
