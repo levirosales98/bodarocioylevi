@@ -36,3 +36,23 @@ const countdown = setInterval(function() {
         document.querySelector(".reloj-canva").innerHTML = "<h3>¡Llegó el gran día!</h3>";
     }
 }, 1000);
+
+
+// MOMENTOS
+
+document.addEventListener('DOMContentLoaded', function() {
+    const galeria = document.getElementById('galeriaScroll');
+    const btnLeft = document.getElementById('slideLeft');
+    const btnRight = document.getElementById('slideRight');
+
+    if (btnLeft && btnRight && galeria) {
+        btnRight.onclick = function () {
+            // Desplaza el ancho de una tarjeta (300px) + el gap (20px)
+            galeria.scrollLeft += 320;
+        };
+
+        btnLeft.onclick = function () {
+            galeria.scrollLeft -= 320;
+        };
+    }
+});
