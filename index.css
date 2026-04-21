@@ -34,6 +34,7 @@ body {
     text-align: center;
 }
 
+
 /* FLECHAS DESPLAZAMIENTO */
 
 .scroll-down {
@@ -161,7 +162,7 @@ body {
 }
 
 
-/* NOS CASAMOS Y FECHA */
+/* NOS CASAMOS */
 
 .nos-casamos {
   text-align: center;
@@ -176,7 +177,7 @@ body {
 }
 
 
-/* IMAGEN PRINCIPAL */
+/* FOTO SAVE THE DATE */
 
 img.portada {
     width: 100%;
@@ -446,34 +447,101 @@ img.portada {
 }
 
 
-/* IMÁGENES */
+/* MOMENTOS */
 
-/* Contenedor de las imágenes */
-.images-container {
-  display: flex;
-  width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
-  height: auto; /* Ocupa toda la altura de la ventana */
-  margin: 0;
-  margin-top: 50px;
-  padding: 0;
-  justify-content: space-between; /* Asegura que haya espacio entre las imágenes en pantallas grandes */
+.galeria-moments {
+    margin-top: 100px;
+    padding-bottom: 50px; /* BORRAR OBLIGATORIO */
 }
 
-/* Estilo para los enlaces */
-.images-link {
-  display: block;
-  flex: 1; /* Hace que cada enlace ocupe el mismo espacio */
-  height: 100%; /* Ocupa toda la altura */
-  padding: 0; /* Elimina cualquier espacio extra alrededor de la imagen */
-  margin: 0; /* Elimina márgenes que puedan causar espacio extra */
-  overflow: hidden; /* Oculta cualquier parte de la imagen que se salga del contenedor */
+.titulo-nuestros-momentos {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 3rem;
+    color: #3A4A68;
+    margin-bottom: 50px;
 }
 
-/* Estilo para las imágenes */
-.images {
-  width: 100%; /* Las imágenes ocuparán el 100% del espacio del contenedor */
-  height: 100%; /* Las imágenes ocuparán toda la altura del contenedor */
-  object-fit: contain; /* Asegura que las imágenes se ajusten dentro del contenedor sin cortarse */
+.carousel-wrapper-apple {
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.contenedor-galeria-scroll {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 20px;
+    padding: 20px 40px;
+    scrollbar-width: none;
+}
+
+.contenedor-galeria-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.tarjeta-foto {
+    position: relative;
+    flex: 0 0 300px;
+    height: 450px;
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: #f5f5f7;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-foto:hover {
+    transform: scale(1.02);
+}
+
+.tarjeta-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info-momento {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 60px 20px 25px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+    color: white;
+    text-align: left;
+}
+
+.subtitulo-momento {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.titulo-momento {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin: 0;
+    line-height: 1.2;
+}
+
+@media (max-width: 480px) {
+    .tarjeta-foto {
+        flex: 0 0 260px;
+        height: 380px;
+    }
+    
+    .contenedor-galeria-scroll {
+        padding: 10px 20px;
+    }
+
+    .btn-nav-galeria {
+        display: none;
+    }
 }
 
 
