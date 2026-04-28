@@ -451,7 +451,6 @@ img.portada {
 
 .galeria-moments {
     margin-top: 100px;
-    padding-bottom: 50px; /* BORRAR OBLIGATORIO */
 }
 
 .titulo-nuestros-momentos {
@@ -545,18 +544,16 @@ img.portada {
 }
 
 
+/* LUGAR Y MAPA */ 
 
-
-
-
-
-
-
-
-
+.titulo-lugar {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 3rem;
+    color: #E2B354; 
+}
 
 .lugar-boda-seccion {
-    margin-top: 80px;
+    margin-top: 100px;
     padding: 0 20px;
     text-align: center;
 }
@@ -599,36 +596,15 @@ img.portada {
     margin-bottom: 20px;
 }
 
-.btn-como-llegar {
-    display: inline-block;
-    background-color: #3A4A68;
-    color: white;
-    padding: 12px 30px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: all 0.3s ease;
-}
-
-.btn-como-llegar:hover {
-    background-color: #E2B354;
-    color: white;
-    transform: translateY(-3px);
-}
-
 @media (max-width: 480px) {
     .lugar-foto-wrapper { height: 200px; }
     .lugar-nombre { font-size: 1.5rem; }
 }
 
-
-
-
-/* --- BOTÓN INSTAGRAM --- */
 .btn-instagram-lugar {
     text-decoration: none;
     display: inline-block;
-    width: 30%;
+    width: 170px;
     margin-top: 10px;
 }
 
@@ -649,14 +625,9 @@ img.portada {
     transform: scale(1.02);
 }
 
-/* --- CONTENEDOR DE MAPA FINAL --- */
-.mapa-contenedor-final {
-    margin-top: 25px;
-}
-
-
-
 .btn-como-llegar {
+    margin-top: 35px;
+    margin-bottom: 35px;
     display: inline-block;
     background-color: #3A4A68;
     color: white;
@@ -668,21 +639,8 @@ img.portada {
 }
 
 .btn-como-llegar:hover {
-    background-color: #E2B354;
-    color: white;
     transform: translateY(-3px);
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* CONFIRMACIÓN */
