@@ -56,3 +56,26 @@ document.addEventListener('DOMContentLoaded', function() {
         };
     }
 });
+
+// PASES Y CONFIRMACIÓN
+
+document.addEventListener('DOMContentLoaded', function() {
+    
+    // Obtener los datos de la URL
+    const params = new URLSearchParams(window.location.search);
+    const nombre = params.get('n');
+    const pases = params.get('p');
+
+    if (pases) {
+        document.getElementById('cantidad-pases').innerText = pases;
+    }
+
+    const iframe = document.querySelector('.google-form-iframe');
+    if (iframe && nombre && pases) {
+        // REEMPLAZA LOS NÚMEROS entry.XXXXX con los que sacaste de tu link prellenado
+        const baseSrc = "https://docs.google.com/forms/d/e/1FAIpQLSca4p5Mwh-yC5dM4IuzAKACCfozOs-APftJZgqv7Bh28rcJug/viewform?embedded=true";
+        const prefilledSrc = `${baseSrc}&entry.1831810967=${encodeURIComponent(nombre.replace(/-/g, ' '))}&entry.1720662081=${pases}`;
+        
+        iframe.src = prefilledSrc;
+    }
+});

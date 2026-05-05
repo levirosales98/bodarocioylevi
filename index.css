@@ -643,6 +643,29 @@ img.portada {
 }
 
 
+/* PASES */
+
+.seccion-pases {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.texto-pases {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Pinyon Script', cursive;
+}
+
+.numero {
+    margin-bottom: 40px;
+    display: block;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #E2B354;
+    line-height: 1;
+}
+
+
 /* CONFIRMACIÓN */
 
 .contact-container{
