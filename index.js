@@ -12,7 +12,7 @@ window.addEventListener('scroll', function() {
 
 // COUNTDOWN
 
-const fechaObjetivo = new Date('Jan 9, 2027 16:00:00').getTime();
+const fechaObjetivo = new Date('Jan 9, 2027 15:30:00').getTime();
 
 const countdown = setInterval(function() {
     const ahora = new Date().getTime();
@@ -68,11 +68,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (pases) {
         document.getElementById('cantidad-pases').innerText = pases;
+        document.getElementById("texto-pases").textContent = pases == 1 ? "pase asignado" : "pases asignados";
     }
 
     const iframe = document.querySelector('.google-form-iframe');
     if (iframe && nombre && pases) {
-        // REEMPLAZA LOS NÚMEROS entry.XXXXX con los que sacaste de tu link prellenado
         const baseSrc = "https://docs.google.com/forms/d/e/1FAIpQLSca4p5Mwh-yC5dM4IuzAKACCfozOs-APftJZgqv7Bh28rcJug/viewform?embedded=true";
         const prefilledSrc = `${baseSrc}&entry.1831810967=${encodeURIComponent(nombre.replace(/-/g, ' '))}&entry.1720662081=${pases}`;
         
