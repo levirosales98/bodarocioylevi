@@ -12,7 +12,7 @@ window.addEventListener('scroll', function() {
 
 // COUNTDOWN
 
-const fechaObjetivo = new Date('Jan 9, 2027 15:30:00').getTime();
+const fechaObjetivo = new Date('Jan 9, 2027 15:00:00').getTime();
 
 const countdown = setInterval(function() {
     const ahora = new Date().getTime();

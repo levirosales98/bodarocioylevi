@@ -84,12 +84,12 @@
 
                 <div class="timeline-item">
                     <div class="side text-left">
-                        <span class="hora">15:30</span>
-                        <p class="evento-nom">Recepción</p>
+                        <span class="hora">15:00</span>
+                        <p class="evento-nom">Recepción y cocktail</p>
                     </div>
                     <div class="dot"></div>
                     <div class="side image-side img-right">
-                        <img src="images/recepcion.png" alt="Recepcion">
+                        <img src="images/recepcion.png" alt="Recepcion y cocktail">
                     </div>
                 </div>
 
@@ -99,32 +99,55 @@
                     </div>
                     <div class="dot"></div>
                     <div class="side text-right">
-                        <span class="hora">16:00</span>
+                        <span class="hora">15:30</span>
                         <p class="evento-nom">Ceremonia</p>
                     </div>
                 </div>
 
                 <div class="timeline-item">
                     <div class="side text-left">
-                        <span class="hora">17:00</span>
-                        <p class="evento-nom">Cocktail</p>
+                        <span class="hora">16:30</span>
+                        <p class="evento-nom">Juegos</p>
                     </div>
                     <div class="dot"></div>
                     <div class="side image-side img-right">
-                        <img src="images/cocktail.png" alt="Cocktail">
+                        <img src="images/juegos.png" alt="Juegos">
                     </div>
                 </div>
 
                 <div class="timeline-item">
                     <div class="side image-side img-left">
-                        <img src="images/banquete.png" alt="Fiesta">
+                        <img src="images/banquete.png" alt="Banquete">
                     </div>
                     <div class="dot"></div>
                     <div class="side text-right">
-                        <span class="hora">18:30</span>
+                        <span class="hora">17:30</span>
                         <p class="evento-nom">Banquete</p>
                     </div>
                 </div>
+
+                <div class="timeline-item">
+                    <div class="side text-left">
+                        <span class="hora">19:00</span>
+                        <p class="evento-nom">Brindis</p>
+                    </div>
+                    <div class="dot"></div>
+                    <div class="side image-side img-right">
+                        <img src="images/cocktail.png" alt="Brindis">
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="side image-side img-left" style="padding-right: 25px !important;">
+                        <img src="images/just_married.jpg" style="width: 80%;" alt="Final">
+                    </div>
+                    <div class="dot"></div>
+                    <div class="side text-right">
+                        <span class="hora">19:30</span>
+                        <p class="evento-nom">Final</p>
+                    </div>
+                </div>
+                
             </div>
           </div>
 
@@ -141,7 +164,7 @@
 
           <!-- COUNTDOWM -->
           <div class="fecha-contador">
-            <img src="images/fecha-countdown.jpg" alt="Manos" class="foto-fondo-contador">
+            <img src="images/nosotros//fecha-countdown.jpg" alt="Manos" class="foto-fondo-contador">
               
             <div class="overlay-suave">
                 <div class="contador-contenido">
@@ -149,7 +172,7 @@
                         <i class="bi bi-heart"></i>
                     </div>
                     <div class="anio-canva">9 de enero 2027</div>
-                    <div class="anio-canva">3:30 pm</div>
+                    <div class="anio-canva">3:00 pm</div>
 
                     <div class="titulo-faltan">faltan</div>
                     
@@ -390,12 +413,13 @@
             </div>
           </div>
 
-            
-          
             <!-- LUGAR Y MAPA -->
-
             <div class="lugar-boda-seccion">
                 <h1 class="titulo-lugar">El Lugar</h1>
+
+                <button type="button" class="btn-indicaciones-modal" data-bs-toggle="modal" data-bs-target="#modalIndicaciones">
+                    <i class="bi bi-compass"></i> Indicaciones de cómo llegar
+                </button>
                 
                 <div class="lugar-card">
                     <div class="lugar-foto-wrapper">
@@ -404,9 +428,14 @@
 
                     <div class="lugar-info">
                         <h2 class="lugar-nombre">Green Box</h2>
-                        <p class="lugar-direccion">
+
+                        <p class="lugar-direccion" style="margin-bottom: 5px !important;">
                             <i class="bi bi-geo-alt"></i> Cerro Alux, San Lucas Sacatepéquez
                         </p>
+                        <p class="lugar-direccion">
+                            <i class="bi bi-thermometer-snow"></i> ¡No olvides tu abrigo! Clima frío
+                        </p>
+                        
                         
                         <a href="https://www.instagram.com/green_boxgt?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="btn-instagram-lugar">
                             <div class="insta-gradient-bg">
@@ -426,6 +455,46 @@
                             <i class="bi bi-map"></i> Abrir mapa
                         </a>
 
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- MODAL DE INDICACIONES -->
+            <div class="modal fade" id="modalIndicaciones" tabindex="-1" aria-labelledby="modalIndicacionesLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content b-modal-personalizado">
+                    <div class="modal-header header-indicaciones">
+                        <h5 class="modal-title label-modal-header" id="modalIndicacionesLabel">Indicaciones</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-start body-indicaciones">
+                        
+                        <h6 class="ruta-subtitulo"><i class="bi bi-building"></i> Desde la ciudad</h6>
+                        <ul class="ruta-lista">
+                            <li>Toma la Carretera Interamericana rumbo a Occidente (Roosevelt/Mixco).</li>
+                            <li>Pasa Mixco y sigue recto.</li>
+                            <li>Continúa por Cerro Alux (km 25–26) sin desviarte.</li>
+                            <li>Pasa el paso a desnivel de San Lucas.</li>
+                            <li>En el km 29 aprox., verás la entrada a San Lucas a la derecha.</li>
+                            <li>Entra al municipio.</li>
+                            <li>Sigue la ruta principal y la señalización hacia Greenbox.</li>
+                            <li class="referencia-item">📍 <strong>Referencia:</strong> después del paso a desnivel, mantente atento a la derecha; es la entrada principal a San Lucas.</li>
+                        </ul>
+
+                        <hr class="divisor-modal">
+
+                        <h6 class="ruta-subtitulo"><i class="bi bi-tree"></i> Desde Bárcenas / El Sope</h6>
+                        <ul class="ruta-lista">
+                            <li>Tomar la carretera desde Bárcenas en dirección hacia San Lucas.</li>
+                            <li>Conducir recto por la ruta conocida como El Sope.</li>
+                            <li>Continuar ascendiendo hasta incorporarte a la Carretera Interamericana (CA-1).</li>
+                            <li>Al incorporarte, girar a la izquierda en dirección a San Lucas Sacatepéquez.</li>
+                            <li>Avanzar pocos minutos hasta ubicar la entrada principal al municipio.</li>
+                            <li>Ingresar y seguir señalización hacia Greenbox.</li>
+                        </ul>
+
+                    </div>
                     </div>
                 </div>
             </div>
