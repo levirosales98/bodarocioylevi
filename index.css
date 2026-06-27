@@ -353,7 +353,7 @@ img.portada {
     font-family: 'Segoe UI', Arial, sans-serif;
     font-weight: 600;
     display: inline-block;
-    border: 1px solid #ddd;
+    border: 5px solid #ddd;
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(0,0,0,0.08);
 }
@@ -561,7 +561,7 @@ img.portada {
 .btn-indicaciones-modal {
     background-color: #ffffff;
     color: #3A4A68;
-    border: 1px solid #EDCA85;
+    border: 2.5px solid #EDCA85;
     padding: 10px 24px;
     border-radius: 50px;
     font-weight: 600;
@@ -660,7 +660,7 @@ img.portada {
     margin-top: 35px;
     margin-bottom: 35px;
     display: inline-block;
-    background-color: #3A4A68;
+    background-color: #33CCFF;
     color: white;
     padding: 12px 30px;
     border-radius: 50px;
