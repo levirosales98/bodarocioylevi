@@ -12,7 +12,8 @@ window.addEventListener('scroll', function() {
 
 // COUNTDOWN
 
-const fechaObjetivo = new Date('Jan 9, 2027 15:00:00').getTime();
+const fechaObjetivo = new Date('Jan 09, 2027 15:00:00').getTime();
+const fechaEvento = new Date('Jan 09, 2027 00:00:00').getTime();
 
 const countdown = setInterval(function() {
     const ahora = new Date().getTime();
@@ -31,9 +32,10 @@ const countdown = setInterval(function() {
     document.getElementById("segundos-c").innerText = segundos < 10 ? "0" + segundos : segundos;
 
     // Si termina el conteo
-    if (distancia < 0) {
+    if (ahora >= fechaEvento) {
         clearInterval(countdown);
-        document.querySelector(".reloj-canva").innerHTML = "<h3>¡Llegó el gran día!</h3>";
+        document.querySelector(".titulo-faltan").innerHTML = '<div class="titulo-faltan">¡Llegó el gran día! ¡Es hoy!</div>';
+        document.querySelector(".reloj-canva").remove();
     }
 }, 1000);
 
