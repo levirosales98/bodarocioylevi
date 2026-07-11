@@ -205,11 +205,18 @@ img.portada {
   font-size: 1.3rem;
   letter-spacing: 2px;
   display: inline-block;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
+}
+
+.indicacion-abrigo {
+    color: #849CAF;
+    font-size: 0.9rem;
+    margin-top: 50px;
+    margin-bottom: 0px;
 }
 
 .paleta-colores {
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
