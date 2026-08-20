@@ -692,13 +692,14 @@ img.portada {
 }
 
 .texto-pases {
+    margin-bottom: 0px;
     font-size: 2rem;
     font-weight: bold;
     font-family: 'Pinyon Script', cursive;
 }
 
 .numeroPases {
-    margin-bottom: 40px;
+    margin: 30px 30px;
     display: block;
     font-size: 4rem;
     font-weight: bold;
